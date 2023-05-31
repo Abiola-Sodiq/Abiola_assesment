@@ -9,35 +9,46 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 5rem;
 }
-.profileContainer{
-    background-color: rgba(255, 250, 240, 0.788);
-    width: 30rem;
-    height: 22rem;
+ .profileContainer{
+    height: 50%;
+    width: 40%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+#img{
+    border-radius: 50%;
+}
 #photo{
    display: flex;
    flex-direction: column;
-    width:35% ;
+    width:40% ;
     height: 100%;
     background-color: cadetblue;
-    gap: 3rem;
+    gap: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
 }
 #info{
+    width: 60%;
     height: 100%;
     display: grid;
     align-items: center;
     background-color: rgba(164, 207, 207, 0.884);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
-#name{
-    font-size: 1.3rem;
-}
-#phoneNumber,#email,#streetAddress{
-    background-color: whitesmoke;
-    height: 3rem;
-    border-radius: 5px;
-    margin: .5rem;
+#submit{
+    width: 15rem;
+    aspect-ratio: 3/1;
+    font-size: 2rem;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: rgba(14, 48, 58, 0.795);
+    color: white;
 }

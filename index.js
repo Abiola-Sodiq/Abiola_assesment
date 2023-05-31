@@ -17,7 +17,7 @@ let submit = document.getElementById("submit")
       console.log(data.results[0]);
       let url = data.results[0].picture.large
       image.src = url
-      userName.textContent = "NAME:" +"  " +
+      userName.textContent =
         data.results[0].name.title +
         " " +
         data.results[0].name.first +
