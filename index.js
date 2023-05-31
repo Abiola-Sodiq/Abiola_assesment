@@ -13,6 +13,8 @@ const profileCard = () => {
     })
     .then((data) => {
       console.log(data.results[0]);
+
+      
       userName.textContent = "NAME:" +"  " +
         data.results[0].name.title +
         " " +
