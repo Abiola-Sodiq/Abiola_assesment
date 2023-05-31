@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.maincontainer{
+    height: 100svh;
+    background-color: rgba(200, 138, 224, 0.842);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileContainer{
+    background-color: rgba(255, 250, 240, 0.788);
+    width: 50rem;
+    height: 25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#photo{
+   display: flex;
+   flex-direction: column;
+    width:35% ;
+    height: 100%;
+    background-color: cadetblue;
+    gap: 3rem;
+}
+#info{
+    height: 100%;
+    display: grid;
+    align-items: center;
+    background-color: rgba(164, 207, 207, 0.884);
+}
+#name{
+    font-size: 1.3rem;
+}
+img{
+    border-radius: 50%;
+}
