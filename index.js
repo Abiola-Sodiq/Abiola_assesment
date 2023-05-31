@@ -1,20 +1,22 @@
 //variable declarations
-let image = document.getElementById("image");
+let image = document.getElementById("img");
 let userName = document.getElementById("name");
 let phoneNumber = document.getElementById("phoneNumber");
 let email = document.getElementById("email");
 let streetAddress = document.getElementById("streetAddress");
+let submit = document.getElementById("submit")
 
 //function to import Api
-const profileCard = () => {
+
+ profileCard = () => {
   fetch("https://randomuser.me/api")
     .then((response) => {
       return response.json();
     })
     .then((data) => {
       console.log(data.results[0]);
-
-      
+      let url = data.results[0].picture.large
+      image.src = url
       userName.textContent = "NAME:" +"  " +
         data.results[0].name.title +
         " " +
@@ -34,3 +36,4 @@ const profileCard = () => {
     });
 };
 profileCard();
+submit.addEventListener("click", profileCard);
